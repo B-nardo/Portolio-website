@@ -21,8 +21,8 @@ export default function Navbar() {
   const ICON_MAP = {
     hero: Home,
     about: User,
-    projects: FolderKanban,
     "case-studies": BookText,
+    projects: FolderKanban,
     skills: CodeXml,
     contact: Mail,
   };

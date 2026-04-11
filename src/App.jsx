@@ -31,8 +31,8 @@ function AppShell() {
       <main className="relative z-10">
         <Hero />
         <About />
-        <Projects />
         <CaseStudies />
+        <Projects />
         <Skills />
         <Contact />
       </main>
