@@ -1,10 +1,15 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import SectionHeader from "../components/ui/SectionHeader";
 import Button from "../components/ui/Button";
 import Reveal from "../components/ui/Reveal";
 import { CONTACT_INFO, SOCIAL_LINKS } from "../data/portfolio";
-import { Smartphone, MapPin, Mail, Clock } from "lucide-react";
+import { Smartphone, MapPin, Mail, Clock, Send } from "lucide-react";
 import { SOCIAL_ICON_MAP } from "../components/ui/SocialIcons";
+
+const EMAILJS_SERVICE_ID  = "service_ndae25k";
+const EMAILJS_TEMPLATE_ID = "template_2gtod5g";
+const EMAILJS_PUBLIC_KEY  = "0NBiepLRMmmizXnLW";
 
 const ICON_MAP = {
   mail: Mail,
@@ -23,7 +28,19 @@ export default function Contact() {
   const handleSubmit = e => {
     e.preventDefault();
     setSending(true);
-    setTimeout(() => { setSending(false); setSent(true); }, 1500);
+    emailjs.send(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
+      { name: form.name, email: form.email, phone: form.phone, message: form.message },
+      EMAILJS_PUBLIC_KEY,
+    ).then(() => {
+      setSending(false);
+      setSent(true);
+    }).catch((err) => {
+      setSending(false);
+      console.error("EmailJS error:", err);
+      alert("Failed to send message. Please try again.");
+    });
   };
 
   return (
@@ -179,7 +196,7 @@ function ContactForm({ form, onChange, onSubmit, sending }) {
         </div>
 
         <div className="md:col-span-2">
-          <Button type="submit" variant="blue" fullWidth disabled={sending}>
+          <Button type="submit" variant="greenglow" fullWidth disabled={sending}>
             {sending ? "Sending..." : "Send Message"}
           </Button>
         </div>
@@ -191,8 +208,8 @@ function ContactForm({ form, onChange, onSubmit, sending }) {
 
 function SuccessMessage() {
   return (
-    <div className="text-center py-10">
-      <p className="text-5xl mb-4">✅</p>
+    <div className="flex flex-col items-center gap-y-5 py-10">
+      <Send className="size-12 animate-fade-up"/>
       <h3 className="font-semibold text-xl mb-2">Message Sent!</h3>
       <p className="text-muted text-sm">Thanks for reaching out. I'll get back to you within 24 hours.</p>
     </div>

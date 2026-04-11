@@ -43,9 +43,10 @@ function StoryCard() {
         <span><User/></span> My Story
       </h3>
       <div className="pt-0 space-y-4">
-        <p>I am a Full Stack Web Developer with expertise in building dynamic, user-friendly applications using modern frontend and backend technologies.</p>
-        <p>I specialize in the MERN stack and have a passion for creating applications that are not only functional but also provide excellent user experiences.</p>
-        <p>When I'm not coding, I explore new technologies, contribute to open-source projects, or share knowledge with the developer community.</p>
+      <p> I am a Full Stack Web Developer and Web Operations Specialist with hands-on experience building applications and managing structured content workflows for real clients — including two ongoing Japanese publishing projects.</p>
+      <p>I work across the full stack using React, PHP, Node.js, and MySQL, and I also specialize in WordPress operations: staging-to-production deployments, legacy template editing via FTP, and backlog-driven maintenance under strict approval workflows.</p>
+      <p>What sets me apart is the operations side — I've built custom tooling on the job, managed high-volume content production in a language I don't speak, and maintained zero unapproved live edits across every project I've handled.</p>
+      <p>When I'm not working, I build personal projects, explore new frameworks, and look for problems worth solving.</p>
       </div>
     </div>
   );
