@@ -93,9 +93,9 @@ export const PROJECTS = [
     category: "Full-Stack",
     desc: "A bakery-focused POS and financial management system that handles transactions, tracks inventory, and generates real-time revenue and profit insights, helping small businesses make data-driven decisions and optimize operations.",
     tags: ["React.js", "Node.js", "PostgreSQL", "Tailwind CSS", "POS System", "Data Analytics"],
-    img: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    liveDemo: "#",
-    repo: "#",
+    img: "/bbksystem.png",
+    liveDemo: "https://bbk-system.vercel.app/",
+    repo: "https://github.com/B-nardo/BBK-System",
   },
   {
     title: "Bookmark Manager",
