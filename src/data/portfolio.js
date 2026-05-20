@@ -22,7 +22,7 @@ export const EXPERIENCE = [
   {
     role: "Software Developer",
     company: "Cybertech Corporation",
-    period: " September 2024 – Present",
+    period: " September 2024 – May 2025",
     desc: "Manage two ongoing client projects for Japanese publishers: (1) Monthly PDF-to-web conversion of a digital magazine using a CMS, including spreadsheet-based production tracking, custom character normalization tooling, text comparison QC, and Photoshop image prep — all submitted through a multi-level Japanese client approval workflow. (2) Backlog-driven WordPress maintenance for a Japanese-language site — implementing all changes in staging, coordinating with a Japanese content lead for language verification, editing legacy PHP templates via FTP, and deploying to production only after explicit approval. Also handle e-commerce product uploads and CRM/Google Sheets workflow tracking.",
   },
   {
