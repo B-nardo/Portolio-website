@@ -61,7 +61,7 @@ export default function Hero() {
             <Button key="contact" variant="secondary" onClick={() => scrollTo("contact")}>
               <Mail className="size-4" /> Get In Touch
             </Button>,
-            <Button key="resume" variant="greenglow" href="/resume/Bernardo_J_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Button key="resume" variant="greenglow" href="/resume/Resume_Bernardo_Jose_II.pdf" target="_blank" rel="noopener noreferrer">
               Download Resume <Download className="size-4" />
             </Button>,
           ].map((btn, i) => (

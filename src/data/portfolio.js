@@ -297,7 +297,7 @@ export const CONTACT_INFO = [
 
 export const SOCIAL_LINKS = [
   { label: "GitHub", href: "https://github.com/B-nardo" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/bernardo-jose-ii-73193a402" },
   { label: "Twitter", href: "https://twitter.com" },
   { label: "Instagram", href: "https://instagram.com" },
 ];
