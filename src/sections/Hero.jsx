@@ -55,7 +55,7 @@ export default function Hero() {
         {/* CTAs */}
         <div className="flex flex-wrap justify-center gap-3 mb-8">
           {[
-            <Button key="work" variant="primary" onClick={() => scrollTo("projects")}>
+            <Button key="work" variant="primary" onClick={() => scrollTo("case-studies")}>
               View My Work <ExternalLink className="size-4" />
             </Button>,
             <Button key="contact" variant="secondary" onClick={() => scrollTo("contact")}>
